@@ -25,7 +25,7 @@ SECRET_KEY = 'vukhalb3(&i8azl7(8^g&6c355$+a)y*yx+3+3e8_u+db5pu!)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
