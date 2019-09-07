@@ -7,13 +7,14 @@ from django.urls import reverse
 class Tag(models.Model):
     """Model representing a tag for a blog post."""
     name = models.CharField(max_length=200, help_text='Enter a tag for a blog post (e.g. Django, Laravel, Docker, etc.)')
+    slug = models.SlugField(unique=True)
 
     def __str__(self):
         return self.name
 
     def get_absolute_url(self):
         """Returns the url to access a detail record for this tag."""
-        return reverse('tag-detail', args=[str(self.id)])
+        return reverse('tag-detail', args=[str(self.slug)])
 
 
 class Post(models.Model):

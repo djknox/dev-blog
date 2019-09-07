@@ -22,8 +22,8 @@ def post_detail(request, slug):
     })
 
 
-def tag_detail(request, pk):
-    tag = get_object_or_404(Tag, pk=pk)
+def tag_detail(request, slug):
+    tag = get_object_or_404(Tag, slug=slug)
 
     return render(request, 'tag_detail.html', {
         'tag': tag
