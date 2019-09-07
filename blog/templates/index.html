@@ -7,7 +7,7 @@
 {% block content %}
     {% for post in posts %}
         <div>
-            {{ post.title }}
+            <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
             <br>
             {{ post.published_date.date }}
         </div>

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>
+        {{ tag.name }}
+    </title>
+{% endblock %}
+
+{% block content %}
+    <div>
+        {{ tag.name }}
+    </div>
+
+    <div>
+        <h4>posts: ({{ tag.post_set.count }} tag{{ tag.post_set.count|pluralize }})</h4>
+        <div>
+            {% for post in tag.post_set.all %}
+                {{ post.title }}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
