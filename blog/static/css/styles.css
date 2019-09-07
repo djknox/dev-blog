@@ -10,9 +10,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-h1 {
-    text-align: center;
-}
 a {
     text-decoration: none;
 }
@@ -69,4 +66,50 @@ a {
 .index-post-date {
     font-size: 1.15rem;
     margin-top: 0.25rem;
+}
+.post-detail-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.post-detail-title {
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+.post-detail-date {
+    font-size: 1.15rem;
+    font-weight: normal;
+}
+.post-detail-text {
+    margin: 1rem 0 1rem 0;
+}
+.post-detail-tag-container {
+    display: flex;
+    flex-direction: row;
+}
+.post-detail-tag-item {
+    margin: 1rem;
+    font-size: 0.85rem;
+}
+.post-detail-tag-item a {
+    border-radius: 0.25rem;
+    border: 0.1rem solid #eeeeee;
+    background: #eeeeee;
+    padding: 0.25rem;
+}
+.tag-detail-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.tag-detail-name {
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+.tag-detail-post-container {
+    display: flex;
+    flex-direction: column;
+}
+.tag-detail-post-item {
+    margin: 1rem 0 1rem 0;
 }

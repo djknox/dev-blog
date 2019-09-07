@@ -7,19 +7,15 @@
 {% endblock %}
 
 {% block content %}
-    <div>
-        {{ post.title }}
-        <br>
-        {{ post.published_date.date }}
-        <br>
-        {{ post.text }}
-    </div>
-
-    <div>
-        <h4>tags:</h4>
-        <div>
+    <div class="post-detail-container">
+        <h1 class="post-detail-title">{{ post.title }}</h1>
+        <h2 class="post-detail-date">{{ post.published_date.date }}</h2>
+        <div class="post-detail-text">
+            {{ post.text }}
+        </div>
+        <div class="post-detail-tag-container">
             {% for tag in post.tags.all %}
-                <div>
+                <div class="post-detail-tag-item">
                     <a href="{{ tag.get_absolute_url }}">{{ tag.name }}</a>
                 </div>
             {% endfor %}
