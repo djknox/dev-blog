@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>dj knox</title>
+{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <div>
+            {{ post.title }}
+            <br>
+            {{ post.published_date }}
+        </div>
+    {% endfor %}
+{% endblock %}

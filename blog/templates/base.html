@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block title %}<title>freeshelf</title>{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add additional CSS in static file -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+  </head>
+  <body>
+      <header>
+            <nav class="header-nav">
+                <div class="nav-link-home">
+                    <a href="{% url 'index' %}">dj knox</a>
+                </div>
+                <div class="nav-link-pages">
+                    <a href="{% url 'about' %}">about</a>
+                </div>
+            </nav>
+      </header>
+      <div class="content">
+
+        {% block content %}{% endblock %}
+
+      </div>
+      <footer>
+            <nav class="footer-nav">
+                <div class="nav-link-home">
+                    <a href="{% url 'index' %}">dj knox</a>
+                </div>
+                <div class="nav-link-pages">
+                    <a href="{% url 'about' %}">about</a>
+                </div>
+            </nav>
+      </footer>
+  </body>
+</html>
