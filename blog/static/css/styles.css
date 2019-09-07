@@ -7,17 +7,14 @@ html, body {
     height: 100%;
 }
 body {
-    text-align: center;
-
     display: flex;
     flex-direction: column;
 }
+h1 {
+    text-align: center;
+}
 a {
     text-decoration: none;
-    /* color: #a36370; */
-}
-a:hover {
-    /* color: #b6897a; */
 }
 .header-nav {
     background-color: #eeeeee;
@@ -31,11 +28,7 @@ a:hover {
     grid-template-rows: 1fr;
 }
 .header-nav a {
-    /* color: #a36370; */
     text-decoration: none;
-}
-.header-nav a:hover {
-    /* color: #c1b8a3; */
 }
 .footer-nav {
     background-color: #eeeeee;
@@ -50,14 +43,7 @@ a:hover {
     grid-template-rows: 1fr;
 }
 .footer-nav a {
-    /* color: #a36370; */
     text-decoration: none;
-}
-.footer-nav a:hover {
-    /* color: #bfa493; */
-}
-.nav-link-home a {
-    /* color: #74464f; */
 }
 .nav-link-pages {
     display: grid;
@@ -70,6 +56,17 @@ a:hover {
     flex: 1 0 auto;
     margin: auto;
 }
-h1 {
-    text-align: center;
+.index-post-container {
+    display: flex;
+    flex-direction: column;
+}
+.index-post-item {
+    margin: 1rem;
+}
+.index-post-link {
+    font-size: 1.75rem;
+}
+.index-post-date {
+    font-size: 1.15rem;
+    margin-top: 0.25rem;
 }
