@@ -1,13 +1,14 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     {% block title %}<title>freeshelf</title>{% endblock %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Add additional CSS in static file -->
-    {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
   </head>
   <body>
       <header>
